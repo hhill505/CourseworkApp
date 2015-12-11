@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  credits: 9.99
+  majorrequirement: false
+  description: MyText
+
+two:
+  name: MyString
+  credits: 9.99
+  majorrequirement: false
+  description: MyText
