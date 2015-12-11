@@ -1,3 +1,5 @@
 class Professor < ActiveRecord::Base
-  belongs_to :course
+  has_many :courses
+
+  validates :firstname, :lastname, :department, :email, :location, :password, presence: true
 end
