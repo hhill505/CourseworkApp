@@ -19,7 +19,7 @@
 	<h3>Classes</h3>
 	<ul>
 		<% @professor.courses.each do |x| %>
-		<li><%= x.name %></li>
+		<li><%= link_to x.name, {:controller => "assignments", :action =>  "new", :selected_course => x} %></li>
 		<% end %>
 	</ul>
 
