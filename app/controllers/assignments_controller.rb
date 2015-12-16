@@ -15,6 +15,7 @@ class AssignmentsController < ProtectedController
   # GET /assignments/new
   def new
     @assignment = Assignment.new
+    @courses = Course.all 
   end
 
   # GET /assignments/1/edit

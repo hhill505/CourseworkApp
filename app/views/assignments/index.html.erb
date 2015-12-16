@@ -19,7 +19,7 @@
         <td><%= assignment.title %></td>
         <td><%= assignment.due %></td>
         <td><%= assignment.description %></td>
-        <td><%= assignment.course %></td>
+        <td><%= assignment.course.name %></td>
         <td><%= link_to 'Show', assignment %></td>
         <td><%= link_to 'Edit', edit_assignment_path(assignment) %></td>
         <td><%= link_to 'Destroy', assignment, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -24,9 +24,10 @@
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :course_id %><br>
-    <%= f.text_field :course_id %>
+    <%= f.label :course %><br>
+    <%= f.collection_select(:course_id, @courses, :id, :name, prompt: "What course is this for?") %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
