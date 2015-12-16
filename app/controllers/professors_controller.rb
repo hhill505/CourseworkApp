@@ -1,4 +1,4 @@
-class ProfessorsController < ApplicationController
+class ProfessorsController < ProtectedController
   before_action :set_professor, only: [:show, :edit, :update, :destroy]
 
   # GET /professors
