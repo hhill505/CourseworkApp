@@ -1,4 +1,4 @@
-class ProtectedController < ActionController
+class ProtectedController < ApplicationController
 	before_action :require_login
 	def require_login
 		unless session[:user_id]

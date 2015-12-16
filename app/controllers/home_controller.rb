@@ -1,4 +1,4 @@
-class HomeController < ProtectedController
+class HomeController < ApplicationController
   def index
   	def index
 		if session[:type] = "student"
