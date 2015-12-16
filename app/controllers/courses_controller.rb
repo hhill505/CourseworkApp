@@ -15,6 +15,7 @@ class CoursesController < ProtectedController
   # GET /courses/new
   def new
     @course = Course.new
+    @professors = Professor.all
   end
 
   # GET /courses/1/edit
@@ -69,6 +70,6 @@ class CoursesController < ProtectedController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def course_params
-      params.require(:course).permit(:name, :credits, :majorrequirement, :description)
+      params.require(:course).permit(:name, :credits, :majorrequirement, :description, :professor_id)
     end
 end

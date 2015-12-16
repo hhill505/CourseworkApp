@@ -1,17 +1,21 @@
 <h1>Home</h1>
 <%if session[:type] == "student" %>
-<h2><%= @student.firstname %>
-	<%= @student.lastname %>
-</h2>
-<h3>Assignments</h3>
-<ul>
-	<% @student.assignments.each do |t| %>
-		<li><%= t.title %></li>
-		<!--PUT THE STUDENTS ASSIGNMENTS HERE -->
-	<% end %>
+	<h2><%= @student.firstname %>
+		<%= @student.lastname %>
+	</h2>
+	<h3>Assignments</h3>
+	<ul>
+		<% @student.assignments.each do |t| %>
+			<li><%= t.title %></li>
+			<!--PUT THE STUDENTS ASSIGNMENTS HERE -->
+		<% end %>
+			
+	</ul>
+
+<%elsif session[:type] == "professor" %>
 		
-</ul>
-<% elsif session[:type] == "professor" %>
-	<!--PUT THE PROFESSORS CLASSES HERE -->
+	
+	<h3>Classes</h3>
+	
 
 <%end%>
