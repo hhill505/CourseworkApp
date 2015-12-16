@@ -19,9 +19,16 @@
 	</ul>
 
 <%elsif session[:type] == "professor" %>
-		
-	
+	<h2><%= @professor.firstname %>
+		<%= @professor.lastname %>
+	</h2>
 	<h3>Classes</h3>
-	
+	<ul>
+		<% @professor.courses.each do |x| %>
+		<li><%= link_to x.name, {:controller => "assignments", :action =>  "new", :selected_course => x} %></li>
+		<% end %>
+	</ul>
+
+	<!--Lucy waz here haha -->
 
 <%end%>

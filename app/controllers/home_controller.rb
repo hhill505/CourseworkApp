@@ -4,8 +4,8 @@ class HomeController < ProtectedController
   			@student = Student.find(session[:user_id])
   		elsif session[:type] == "professor"
   			@professor = Professor.find(session[:user_id])
-  		end 
+  		end
 
-  
+
   end
 end
