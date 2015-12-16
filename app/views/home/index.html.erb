@@ -17,10 +17,12 @@
 		<%= @professor.lastname %>
 	</h2>
 	<h3>Classes</h3>
-		<!--PUT THE CLASSES HERE -->
 	<ul>
-
+		<% @professor.courses.each do |x| %>
+		<li><%= x.name %></li>
+		<% end %>
 	</ul>
-	
+
+	<!--Lucy waz here haha -->
 
 <%end%>

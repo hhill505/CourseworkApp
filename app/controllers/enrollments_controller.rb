@@ -15,7 +15,8 @@ class EnrollmentsController < ProtectedController
   # GET /enrollments/new
   def new
     @enrollment = Enrollment.new
-  end
+    @students = Student.all
+    @professor = Professor.all
 
   # GET /enrollments/1/edit
   def edit
