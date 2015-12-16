@@ -5,9 +5,15 @@
 	</h2>
 	<h3>Assignments</h3>
 	<ul>
-		<% @student.assignments.each do |t| %>
-			<li><%= t.title %></li>
+		<% @student.courses.each do |t| %>
+			<li><%= t.name %></li>
 			<!--PUT THE STUDENTS ASSIGNMENTS HERE -->
+			<ul>
+				<% t.assignments.each do |s| %>
+					<li><%= link_to s.title, s %></li>
+				<% end %>
+			</ul>
+			
 		<% end %>
 			
 	</ul>
