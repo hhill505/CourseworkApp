@@ -14,21 +14,15 @@
 
   <div class="field">
     <%= f.label :student_id %><br>
-<<<<<<< HEAD
+
     <%= f.collection_select(:student_id, Student.all, :id, :netid, prompt: "Choose a student") %>
 
   </div>
   <div class="field">
     <%= f.label :course_id %><br>
     <%= f.collection_select(:course_id, Course.all, :id, :name, prompt: "Choose a course") %>
-=======
-    <%= f.collection_select(:student_id, @students, :id, :netid, prompt: "Choose a student") %>
-  </div>
-  <div class="field">
-    <%= f.label :course_id %><br>
-    <%= f.collection_select(:course_id, @courses, :id, :name, prompt: "Choose a course") %>
->>>>>>> 8f5eed349bc435c882875e44b9ab3e5f83d111c4
-  </div>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>
