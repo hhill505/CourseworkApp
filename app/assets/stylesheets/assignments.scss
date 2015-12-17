@@ -8,10 +8,9 @@ h1 {background-image: url("goldcolor.jpg"); width: 97%; color:#000066; padding:2
 
 body { background-image: url("bluebackground.jpg")}
 
-h2,h3,th,td,ul,p,li,ul { color:#fff}
-a:link { color:#fff}
-a:visited { color:#fff}
-a:active { color:#fff}
-a:hover { color:#fff}
+h2,h3,th,td,p,ul { color:#fff}
+ul li a:visited { color:#CCCC00}
+ul li a:link { color:#fff}
+ul li a:hover { color:#006600}
 
 footer { float: left; width: 100%; text-align: center; border-top: thin solid #000; margin-top: 10px}
