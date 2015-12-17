@@ -15,17 +15,11 @@ class EnrollmentsController < ProtectedController
   # GET /enrollments/new
   def new
     @enrollment = Enrollment.new
-<<<<<<< HEAD
-	@students = Student.all 
-	@courses = Course.all
-  end
-=======
 
 	@students = Student.all 
 	@courses = Course.all
   end
 
->>>>>>> 352f694164b11f5d270a2ebd90ed1d50a5a0647d
 
   # GET /enrollments/1/edit
   def edit
@@ -44,7 +38,7 @@ class EnrollmentsController < ProtectedController
         format.html { render :new }
         format.json { render json: @enrollment.errors, status: :unprocessable_entity }
       end
-    
+    end
   end
 
   # PATCH/PUT /enrollments/1
@@ -58,7 +52,7 @@ class EnrollmentsController < ProtectedController
         format.html { render :edit }
         format.json { render json: @enrollment.errors, status: :unprocessable_entity }
       end
-    
+    end
   end
 
   # DELETE /enrollments/1
