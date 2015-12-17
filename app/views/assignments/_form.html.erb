@@ -27,7 +27,8 @@
   <div class="field">
     <%= f.label :course %><br>
     
-      <%= f.collection_select(:course_id, @courses, :id, :name, prompt: "What course is this for?", :selected => @selected_course) %>
+      <%= f.collection_select(:course_id, @courses, :id, :name, prompt: "What course is this for?", :selected => @selected_course.id) %>
+      <%= @selected_course.name %>
       
   </div>
 

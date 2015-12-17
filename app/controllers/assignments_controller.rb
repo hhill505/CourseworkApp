@@ -18,6 +18,7 @@ class AssignmentsController < ProtectedController
     @courses = Course.all 
     if params[:selected_course]
       @selected_course =Course.find(params[:selected_course])
+      
     end
   end
 
