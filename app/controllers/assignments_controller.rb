@@ -21,6 +21,7 @@ class AssignmentsController < ProtectedController
 
   # GET /assignments/1/edit
   def edit
+    @courses = Course.all
   end
 
   # POST /assignments
