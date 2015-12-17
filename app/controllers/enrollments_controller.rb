@@ -15,14 +15,11 @@ class EnrollmentsController < ProtectedController
   # GET /enrollments/new
   def new
     @enrollment = Enrollment.new
-<<<<<<< HEAD
+
 	@students = Student.all 
 	@courses = Course.all
   end
-=======
-    @students = Student.all
-    @professor = Professor.all
->>>>>>> 8f5eed349bc435c882875e44b9ab3e5f83d111c4
+
 
   # GET /enrollments/1/edit
   def edit

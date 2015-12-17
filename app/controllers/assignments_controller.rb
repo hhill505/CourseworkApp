@@ -16,7 +16,9 @@ class AssignmentsController < ProtectedController
   def new
     @assignment = Assignment.new
     @courses = Course.all 
-    @selected_course =Course.find(params[:selected_course])
+    if params[:selected_course]
+      @selected_course =Course.find(params[:selected_course])
+    end
   end
 
   # GET /assignments/1/edit
